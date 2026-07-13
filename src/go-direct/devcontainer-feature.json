@@ -12,6 +12,11 @@
 			],
 			"default": "latest",
 			"description": "Select or enter a Go version to install"
+		},
+		"extraPackages": {
+			"type": "string",
+			"default": "",
+			"description": "Extra Go tools to install, separated by spaces. For example: 'golang.org/x/tools/cmd/goimports google.golang.org/protobuf/cmd/protoc-gen-go'."
 		}
 	},
 	"init": true,

@@ -57,3 +57,13 @@ packages=(
 for package in "${packages[@]}"; do
 	go install "${package}@latest"
 done
+
+if [ -n "${EXTRA_PACKAGES}" ]; then
+	for package in ${EXTRA_PACKAGES}; do
+		if [[ "${package}" == *"@"* ]]; then
+			go install "${package}"
+		else
+			go install "${package}@latest"
+		fi
+	done
+fi
