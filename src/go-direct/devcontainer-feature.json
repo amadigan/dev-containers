@@ -1,6 +1,6 @@
 {
 	"id": "go-direct",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"name": "Go (go.dev)",
 	"documentationURL": "https://github.com/amadigan/dev-containers/tree/main/src/go-direct",
 	"description": "Installs Go and the tools needed by the VS Code Go extension, including golangci-lint. Go is installed directly from the official Go distribution, rather than using a package manager.",
